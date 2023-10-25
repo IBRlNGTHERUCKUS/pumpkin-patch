@@ -85,6 +85,7 @@ p {
     background-color: var(--light-brown);
     flex: 1;
     padding: 1rem;
+    width: clamp(100px, 100%, 700px);
 }
 
 article {
@@ -93,13 +94,14 @@ article {
 }
 
 .main-image {
-    width:90%;
+    width: min(90%, 500px);
     align-self: center;
 }
 
 footer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
     padding: 18px;
     background-color: var(--dark-brown);
