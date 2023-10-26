@@ -37,7 +37,7 @@ body {
 main {
     flex: 1;
     background: var(--fall-gradient);
-    padding: 3vw;
+    padding:10px 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,16 +84,22 @@ p {
 .inner {
     background-color: var(--light-brown);
     flex: 1;
-    padding: 1rem;
-    width: clamp(100px, 100%, 700px);
+    box-sizing: border-box;
+    width: min(100%, 700px);
 }
 
 article {
+    width: min(100%, 700px);
+    box-sizing: border-box;
+    background-color: var(--light-brown);
     display: flex;
     flex-direction: column;
+    border: solid 2px;
+    border-radius: 16px;
+    padding: 1rem;
 }
 
-.main-image {
+.main-image, .article-image, p, h2 {
     width: min(90%, 500px);
     align-self: center;
 }
@@ -102,7 +108,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 10px;
     padding: 18px;
     background-color: var(--dark-brown);
 }
