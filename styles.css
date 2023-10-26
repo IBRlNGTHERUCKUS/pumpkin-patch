@@ -3,6 +3,15 @@
     --light-brown: hsl(23, 80%, 85%);
     --fall-gradient: linear-gradient(180deg, rgba(223,139,46,1) 0%, rgba(255,213,43,1) 42%, rgba(255,218,164,1) 89%);
 }
+@font-face {
+    font-family: Playpen-Sans;
+    src: url(./fonts/Playpen_Sans/static/PlaypenSans-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Open-Sans;
+    src: url(./fonts/Open_Sans/static/OpenSans-Regular.ttf);
+  }
 
 body {
     min-height: 100vh;
@@ -13,25 +22,36 @@ body {
 
 .link-bar {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 6px;
     background-color: var(--dark-brown);
-    padding: 18px;
+    padding: 6px;
     position:sticky;
     top: 0;
     z-index: 1;
 }
 
 .link-bar .logo {
-    flex: 3;
+    object-fit: contain;
+    flex: 1;
+    max-height: 5rem;
 }
-.link-bar a {
+
+.links {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+}
+.links a {
     flex: 1;
     text-align: center;
     background-color: var(--light-brown);
     color: var(--dark-brown);
     text-decoration: none;
     border-radius: 5px;
-    padding: 4px 0;
+    padding: 8px;
+    height: fit-content;
 }
 
 main {
@@ -71,12 +91,14 @@ main {
 
 h1, h2, h3 {
     margin: 0;
+    font-family: 'Open-Sans';
 }
 h1 {
     text-align: center;
     font-size: 2.3rem;
 }
 p {
+    font-family: 'Playpen-Sans';
     font-size: 1.2rem;
     text-indent: 1rem;
 }
@@ -87,26 +109,31 @@ article {
     background-color: var(--light-brown);
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     border: solid 2px;
     border-radius: 16px;
     padding: 1rem;
 }
-
+.main-article {
+    border-radius: 0;
+}
 .main-image, .article-image, p, h2 {
     width: min(90%, 500px);
     align-self: center;
 }
 .attraction-gallery {
-    width: min(100%, 700px);
     display: flex;
     justify-content: space-around;
     flex-wrap:wrap;
     gap: 8px;
 }
+
 .attraction-gallery article {
     flex:1;
-    min-width: 233px;
+    min-width: 200px;
 }
+
+
 footer {
     display: flex;
     justify-content: center;
