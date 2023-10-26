@@ -81,13 +81,6 @@ p {
     text-indent: 1rem;
 }
 
-.inner {
-    background-color: var(--light-brown);
-    flex: 1;
-    box-sizing: border-box;
-    width: min(100%, 700px);
-}
-
 article {
     width: min(100%, 700px);
     box-sizing: border-box;
@@ -103,7 +96,17 @@ article {
     width: min(90%, 500px);
     align-self: center;
 }
-
+.attraction-gallery {
+    width: min(100%, 700px);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    gap: 8px;
+}
+.attraction-gallery article {
+    flex:1;
+    min-width: 233px;
+}
 footer {
     display: flex;
     justify-content: center;
