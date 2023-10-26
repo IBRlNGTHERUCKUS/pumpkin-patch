@@ -161,4 +161,5 @@ form, address {
 
 form h2 {
     font-size: clamp(1rem, 3vw, 1.5rem);
+    align-self: flex-start;
 }
