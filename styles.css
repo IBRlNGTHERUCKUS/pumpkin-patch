@@ -4,6 +4,7 @@
     --fall-gradient: linear-gradient(180deg, rgba(223,139,46,1) 0%, rgba(255,213,43,1) 42%, rgba(255,218,164,1) 89%);
     --logo-text-color: #c9c58a;
 }
+
 @font-face {
     font-family: Playpen-Sans;
     src: url(./fonts/Playpen_Sans/static/PlaypenSans-Regular.ttf);
@@ -91,7 +92,7 @@ main {
     text-align: center;
 }
 
-h1, h2, h3 {
+h1, h2, h3, ul {
     margin: 0;
     font-family: 'Open-Sans';
 }
@@ -206,4 +207,20 @@ input {
     border:  solid 1px rgb(198, 185, 185);
     height: 1.2rem;
     font-size: 0.9rem
+}
+
+.secondary-page {
+    background: rgba(223,139,46,1);
+}
+
+/* Make the side the image is on alternate */
+.secondary-image {
+    width: clamp(100px, 100%, 300px);
+    float:left;
+    margin: 0px 10px 0px 0px;
+}
+.right {
+    text-align: right;
+    float: right;
+    margin: 0px 0px 0px 10px;
 }
