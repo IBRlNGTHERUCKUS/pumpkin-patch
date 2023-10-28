@@ -2,6 +2,7 @@
     --dark-brown: hsl(23, 70%, 20%);
     --light-brown: hsl(23, 80%, 85%);
     --fall-gradient: linear-gradient(180deg, rgba(223,139,46,1) 0%, rgba(255,213,43,1) 42%, rgba(255,218,164,1) 89%);
+    --logo-text-color: #c9c58a;
 }
 @font-face {
     font-family: Playpen-Sans;
@@ -61,7 +62,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3vw;
+    gap: 3vmin;
 }
 
 .hero {
@@ -86,7 +87,8 @@ main {
     background-color: rgba(0,0,0,.7);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
-    color: rgba(235, 232, 221, 0.885)
+    color: rgba(235, 232, 221, 0.885);
+    text-align: center;
 }
 
 h1, h2, h3 {
@@ -177,4 +179,31 @@ address a, address em, label {
 form h2 {
     font-size: clamp(1rem, 3vw, 1.5rem);
     align-self: flex-start;
+}
+
+button {
+    margin-top: 3px;
+    height: 2rem;
+    
+    border-radius: 6px;
+    border: none;
+    background-color: #ff6418;
+    font-family: 'Open-Sans';
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 100ms;
+    align-self: center;
+}
+
+button:hover {
+    font-size: 1.2rem;
+    background: #c9c58a;
+}
+
+input {
+    border-radius: 6px;
+    border:  solid 1px rgb(198, 185, 185);
+    height: 1.2rem;
+    font-size: 0.9rem
 }
