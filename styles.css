@@ -57,10 +57,10 @@ body {
     background-color: var(--light-brown); 
     border-radius: 5px;
     height: fit-content;
+    padding: 8px;
 }
 
 a {
-    padding: 8px;
     color: var(--dark-brown);
     text-decoration: none;
 }
