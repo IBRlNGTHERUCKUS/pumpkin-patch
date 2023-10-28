@@ -50,15 +50,19 @@ body {
     gap: 8px;
     flex: 1;
 }
+
 .links a {
     flex: 1;
     text-align: center;
-    background-color: var(--light-brown);
+    background-color: var(--light-brown); 
+    border-radius: 5px;
+    height: fit-content;
+}
+
+a {
+    padding: 8px;
     color: var(--dark-brown);
     text-decoration: none;
-    border-radius: 5px;
-    padding: 8px;
-    height: fit-content;
 }
 
 main {
@@ -117,6 +121,8 @@ article {
     background-color: var(--light-brown);
     display: flex;
     flex-direction: column;
+    /* NEW \/ */
+    align-items: center;
     justify-content: space-around;
     border: solid 2px;
     border-radius: 16px;
@@ -228,4 +234,16 @@ input {
     text-align: right;
     float: right;
     margin: 0px 0px 0px 10px;
+}
+
+.contact {
+    display:flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 6px;
+    width: 60%;
+}
+
+.contact input{
+    max-width: 100%
 }
