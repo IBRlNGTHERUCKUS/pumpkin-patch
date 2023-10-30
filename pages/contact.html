@@ -19,19 +19,17 @@
     </div>
 
     <main class="secondary-page">
-        <article>
-            <h1>Contact Us</h1>
-            <img class="main-image" src="https://media.istockphoto.com/id/1280061858/photo/family-in-a-pumpkin-patch.jpg?s=612x612&w=0&k=20&c=J_h85-f5od9JY2_GzIV7lVv7yS6xzS3Lix0cZdeHf0M=" alt="">
-            <h3>Have a comment, question, or concern? Let us know!</h3>
+        <div class="pumpkin-container">
             <form class="contact" action="" method="">
+                <h1>Contact Us</h1>
                 <label for="contact-email">Email
-                <input id="contact-email" type="email" name="email" placeholder="you@email.com">
+                <input id="contact-email" type="email" name="email" placeholder="you@email.com" required>
                 </label>
                 <label for="user-message"></label>
-                <textarea name="user-message" id="user-message" rows="10"></textarea>
+                <textarea placeholder="Type Message Here" name="user-message" id="user-message" minlength="10" maxlength="500" required></textarea>
             </form>
-            <a href="./about.html#FAQ">Need to know now? Check our FAQ</a>
-        </article>
+        </div>
+        <a href="./about.html#FAQ">Need to know now? Check our FAQ</a>
     </main>
     <footer>
         <div class="social-bar">

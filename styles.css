@@ -239,13 +239,28 @@ input {
 .contact {
     display:flex;
     flex-direction: column;
+    justify-content: center;
     gap: 6px;
     padding-top: 6px;
     width: 60%;
 }
 
+.contact h1 {
+    font-size: clamp(1rem, 8vw, 4rem);
+}
+
+.contact label {
+    font-size: clamp(1rem, 6vw, 2rem);
+    color: white;
+}
+
 .contact input{
-    max-width: 100%
+    max-width: 100%;
+    height: 70%;
+}
+
+textarea {
+    height: 10%;
 }
 
 .ticket-amount {
@@ -253,10 +268,16 @@ input {
     text-align: center;
 }
 
-.smokey-section {
-    width: 100vw;
+.pumpkin-container {
+    width: min(100vw, 750px);
+    height: calc(100vmin/1.2);
     color: white;
-    position: relative;
-    top: -10px;
-    background: url('https://t3.ftcdn.net/jpg/03/34/90/78/360_F_334907879_ffVwLBKrs5QkHEEJkXKCA5ZXHqlpr7iM.jpg');
-}
+    background: url('./images/pumpkin-container.png');
+    background-position: center;
+    background-size:95%;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
