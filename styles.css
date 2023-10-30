@@ -196,10 +196,10 @@ form h2 {
 button {
     margin-top: 3px;
     height: 2rem;
-    
     border-radius: 6px;
     border: none;
     background-color: #ff6418;
+    color: black;
     font-family: 'Open-Sans';
     font-weight: bold;
     font-size: 1rem;
@@ -221,7 +221,7 @@ input {
 }
 
 .secondary-page {
-    background: rgba(223,139,46,1);
+    background: var(--light-brown);
 }
 
 /* Make the side the image is on alternate */
@@ -246,4 +246,17 @@ input {
 
 .contact input{
     max-width: 100%
+}
+
+.ticket-amount {
+    width: 2rem;
+    text-align: center;
+}
+
+.smokey-section {
+    width: 100vw;
+    color: white;
+    position: relative;
+    top: -10px;
+    background: url('https://t3.ftcdn.net/jpg/03/34/90/78/360_F_334907879_ffVwLBKrs5QkHEEJkXKCA5ZXHqlpr7iM.jpg');
 }
