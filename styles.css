@@ -220,15 +220,23 @@ input {
     font-size: 0.9rem
 }
 
-.secondary-page {
+.secondary-page{
     background: var(--light-brown);
+    border: none;
 }
+
+.secondary-page article{
+    border: none;
+}
+
+
 
 /* Make the side the image is on alternate */
 .secondary-image {
     width: clamp(100px, 100%, 300px);
     float:left;
     margin: 0px 10px 0px 0px;
+    border-radius: 16px;
 }
 .right {
     text-align: right;
@@ -283,14 +291,14 @@ input {
 textarea {
     height: 10%;
 }
+.pumpkin-truck {
+    display: inline-block;
+    height: clamp(1rem, 6vw, 2.5rem);
+}
+
 
 .ticket-amount {
     width: 2rem;
     text-align: center;
 }
 
-
-.pumpkin-truck {
-    display: inline-block;
-    height: clamp(1rem, 6vw, 2.5rem);
-}
