@@ -2,7 +2,13 @@ const timer = document.querySelector('.timer');
 
 function updateTimer() {
     const presentDate = new Date;
-    const targetDate = new Date(`october 31 ${presentDate.getFullYear()}`);
+    let targetDate = new Date(`october 31 ${presentDate.getFullYear()}`);
+
+    // Check if halloween has already passed
+    if (presentDate > targetDate) {
+        targetDate = new Date(`october 31 ${presentDate.getFullYear() + 1}`);
+    }
+    
     let difference = targetDate-presentDate;
     let seconds = Math.floor((difference % (1000 * 60)) / 1000);
     let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
