@@ -15,6 +15,16 @@
     src: url(./fonts/Open_Sans/static/OpenSans-Regular.ttf);
   }
 
+  @font-face {
+    font-family: URW-Bookman;
+    src: url(./fonts/URW\ Bookman\ L\ DemiBoldItalic.ttf);
+  }
+
+  @font-face {
+    font-family: Noteworthy;
+    src: url(./fonts/FontsFree-Net-Noteworthy-Light.ttf);
+  }
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -85,6 +95,18 @@ main {
     padding: 1rem 0;
 }
 
+.hero h1 {
+    font-family: URW-Bookman;
+}
+
+.cursive {
+    font-family: noteworthy;
+    color: rgb(255, 0, 21);
+    text-shadow: rgb(0, 0, 0) 1px 1px;
+}
+
+
+
 .hero-inner {
     box-sizing: border-box;
     font-size: 1.5rem;
@@ -99,9 +121,10 @@ main {
     -webkit-backdrop-filter: blur(3px);
     color: rgba(235, 232, 221, 0.885);
     text-align: center;
+    font-family: 'URW-Bookman';
 }
 
-h1, h2, h3, ul {
+h1, h2, h3, ul, label {
     margin: 0;
     font-family: 'Open-Sans';
 }
@@ -264,6 +287,7 @@ input {
 .content-bubble {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background: white;
@@ -271,6 +295,15 @@ input {
     width: min(90%, 500px);
     padding: 1rem;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.content-bubble ul {
+    text-align: start;
+}
+
+.content-bubble.total {
+    padding: 3px;
 }
 
 .pumpkin-container {
@@ -315,9 +348,25 @@ textarea {
     height: clamp(1rem, 6vw, 2.5rem);
 }
 
+.ticket-container, .ticket-container h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    font-size: 1.2rem;
+}
 
 .ticket-amount {
     width: 2rem;
     text-align: center;
 }
 
+.tickets {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.tickets iframe {
+    width: max(60%, 200px);
+}

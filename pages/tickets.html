@@ -17,24 +17,45 @@
             <a href="./contact.html">Contact</a>
         </div>
     </div>
+    <div class="hero" style="background: url(../images/halloween-bg.jpg)">
+        <div class="hero-inner">
+            <h1>Still Not Convinced???</h1>
+            <h2 class="cursive">Don't Miss Out!</h2>
+        </div>
+    </div>
 
     <main class="secondary-page">
-
-        <article>
-            <form action="">
+        <article class="content-bubble tickets">
+            <iframe  src="https://www.youtube.com/embed/nt-Gn0ubA9g?si=ZcO5-5ri7hqyf6Ff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <ul>
+                <li>Face painting</li>
+                <li>Petting zoo</li>
+                <li>Photo ops</li>
+                <li>Carriage rides</li>
+                <li>And more!!</li>
+            </ul>
+        </article>
+            <form action="" class="ticket-container">
                 <h1>Tickets</h1>
                 <h3>Buy before they run out!</h3>
-                <div>
-                    <input class="ticket-amount" id="adult-tickets" type="number" name="adult-tickets" placeholder="0">
-                    <label>Adult: <em>$15.00</em></label>
+                <div class="content-bubble">
+                    <div>
+                        <input class="ticket-amount" id="adult-tickets" type="number" name="adult-tickets" placeholder="0">
+                        <label for="adult-tickets">Adult: <em>$15.00</em></label>
+                    </div>
+                    <div>
+                        <input class="ticket-amount" id="child-tickets" type="number" name="child-tickets" placeholder="0">
+                        <label for="child-tickets">Child: <em>$10.00</em></label>
+                    </div>
+                    <div>
+                        <input class="ticket-amount" id="discount-tickets" type="number" name="discount-tickets" placeholder="0">
+                        <label for="discount-tickets">Student: <em>$12.00</em></label>
+                    </div>
                 </div>
-                <div>
-                    <input class="ticket-amount" id="child-tickets" type="number" name="child-tickets" placeholder="0">
-                    <label> x Child: <em>$10.00</em></label>
-                </div>
-                <div>
-                    <input class="ticket-amount" id="discount-tickets" type="number" name="discount-tickets" placeholder="0">
-                    <label>Military, LEO, First-Responder, : <em>$7.00</em></label>
+                <div class="content-bubble total">
+                    <h2 class="total">Total: $0</h2>
+                    <label for="continue-to-payment" class="continue-to-payment">Continue to Payment</label>
+                    <input id="continue-to-payment" type="image" class="pumpkin-truck" src="../images/pumpkin-truck.png">
                 </div>
             </form>
         </article>
