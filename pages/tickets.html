@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pumpkin Patch</title>
     <link rel="stylesheet" href="../styles.css">
-    <script src="./index.js" defer></script>
+    <script src="../tickets.js" defer></script>
 </head>
 <body>
     <div class="link-bar">
@@ -34,31 +34,36 @@
                 <li>Carriage rides</li>
                 <li>And more!!</li>
             </ul>
+Face painting
+Petting zoo
+Photo ops
+Carriage rides
+And more!!
+
         </article>
             <form action="" class="ticket-container">
                 <h1>Tickets</h1>
                 <h3>Buy before they run out!</h3>
                 <div class="content-bubble">
                     <div>
-                        <input class="ticket-amount" id="adult-tickets" type="number" name="adult-tickets" placeholder="0">
+                        <input class="ticket-amount" id="adult-tickets" type="number" name="adult-tickets" placeholder="0" min="0">
                         <label for="adult-tickets">Adult: <em>$15.00</em></label>
                     </div>
                     <div>
-                        <input class="ticket-amount" id="child-tickets" type="number" name="child-tickets" placeholder="0">
+                        <input class="ticket-amount" id="child-tickets" type="number" name="child-tickets" placeholder="0" min="0">
                         <label for="child-tickets">Child: <em>$10.00</em></label>
                     </div>
                     <div>
-                        <input class="ticket-amount" id="discount-tickets" type="number" name="discount-tickets" placeholder="0">
+                        <input class="ticket-amount" id="discount-tickets" type="number" name="discount-tickets" placeholder="0" min="0">
                         <label for="discount-tickets">Student: <em>$12.00</em></label>
                     </div>
                 </div>
                 <div class="content-bubble total">
-                    <h2 class="total">Total: $0</h2>
+                    <h2 class="total">Subtotal: $0</h2>
                     <label for="continue-to-payment" class="continue-to-payment">Continue to Payment</label>
                     <input id="continue-to-payment" type="image" class="pumpkin-truck" src="../images/pumpkin-truck.png">
                 </div>
             </form>
-        </article>
     </main>
     <footer>
         <div class="social-bar">
