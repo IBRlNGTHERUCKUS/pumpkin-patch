@@ -254,6 +254,25 @@ input {
     text-shadow: .7px .7px black;
 }
 
+.top {
+    background: #FA5800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.content-bubble {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 24px;
+    width: min(90%, 500px);
+    padding: 1rem;
+    text-align: center;
+}
+
 .pumpkin-container {
     width: min(100vw, 750px);
     height: calc(100vmin/1.2);
